@@ -1,0 +1,76 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #e0f7fa;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #00796b;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Stats */
+  #stats {
+    margin-bottom: 20px;
+  }
+  
+  /* Game Board */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 350px;
+    margin: 0 auto 30px;
+  }
+  
+  .card {
+    width: 80px;
+    height: 80px;
+    background: #4db6ac;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 32px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    user-select: none;
+  }
+  
+  .card.flipped {
+    background: #00796b;
+    transform: rotateY(180deg);
+  }
+  
+  /* Restart Button */
+  #restart {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #restart:hover {
+    background-color: #004d40;
+  }
+  
